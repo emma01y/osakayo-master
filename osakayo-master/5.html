@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>行程表</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="160x160" href="./img/forios.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://twemoji.maxcdn.com/2/twemoji.min.js?12.0.4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container bg-white">
+        <!--標題 開始-->
+        <div class="nav navbar mt-2 mb-2 osaka w-100">
+          <a href="index.html">11/27(三)</a>
+          <a href="2.html">11/28(四)</a>
+          <a href="3.html">11/29(五)</a>
+          <a href="4.html">11/30(六)</a>
+          <a href="5.html">12/1(日)</a>
+          <a href="6.html">12/2(一)</a>
+        </div>
+        <!--標題 結束-->
+        <!--標題 結束-->
+        <!--獎勵推薦區 開始-->
+        <div class="mb-2 mt-2">
+            <table class="table table-striped table-bordered">
+                <thead class="osakatitle osakatitle__5">
+                    <tr>
+                        <th class="sticky-top" scope="col">12/1(日)</th>
+                        <th class="sticky-top" scope="col">行程</th>
+                        <th class="sticky-top" scope="col">交通(使用JR PASS一日券)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">6:00-7:00</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7:00-8:00</th>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8:00-9:00</th>
+                        <td rowspan="4">姬路城</td>
+                        <td rowspan="4">1.日本橋→難波<br>2.難波→西梅田/大阪<br>3.轉JR到姬路<br>💡1720円(JR部分1,490円)<br>💡費時1.5h<br>💡營業時間:9:30-16:30</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9:00-10:00</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:00-11:00</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:00-12:00</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">12:00-13:00</th>
+                        <td rowspan="2">和牛</td>
+                        <td rowspan="2">1.JR姬路→JR三之宮<br>💡費時40min<br>💡970円</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13:00-14:00</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">14:00-15:00</th>
+                        <td rowspan="3">神戶動物王國<br>💵門票1800円</td>
+                        <td rowspan="3">1.三ノ宮→京コンピュータ<br>💡280円<br>💡費時17min<br>💡營業時間:10:00-17:30<a class="text-info float-right font-weight-bold" data-container="body" data-toggle="popover" data-placement="bottom" data-content="<a href='https://tw.kobe-oukoku.com/event_schedule/' target='_blank'>活動時間表</a>">點開備註</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15:00-16:00</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">16:00-17:00</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">17:00-18:00</th>
+                        <td rowspan="2">梅田站商圈-卡納赫拉/逛街</td>
+                        <td rowspan="2">1.京コンピュータ→JR三ノ宮(410円)→大阪<br>2.走到梅田<br>💡神戶-梅田690円</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18:00-19:00</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">19:00-20:00</th>
+                        <td>梅田夜景<br>💵門票1500円</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20:00-21:00</th>
+                        <td rowspan="2">唐吉軻德</td>
+                        <td rowspan="2">1.梅田-御堂筋線(天王寺行)→難波<br>💡230円<br>💡道頓堀禦堂筋店24hr</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">21:00-22:00</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">22:00-23:00</th>
+                        <td>鳥貴族17.00-01.00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">23:00-24:00</th>
+                        <td>梅田M15-M20難波-步行10min<br>💡路程35min</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+<script>
+$(function() {
+    $('[data-toggle="popover"]').popover({ html: true })
+})
+//twitter emoji
+$(document).ready(function() {
+    twemoji.parse(document.body, {
+        folder: 'svg',
+        ext: '.svg'
+    });
+});
+</script>
+</body>
+
+</html>
